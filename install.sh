@@ -11,5 +11,5 @@ sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install -y sublime-text google-chrome-stable
 
-wget https://update.gitter.im/linux64/latest
+wget https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb
 sudo dpkg -i gitter*.deb
