@@ -10,4 +10,6 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install -y sublime-text google-chrome-stable
-sudo dpkg -i gitter_3.1.0_amd64.deb
+
+wget https://update.gitter.im/linux64/latest
+sudo dpkg -i gitter*.deb
