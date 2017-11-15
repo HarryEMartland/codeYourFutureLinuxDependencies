@@ -9,7 +9,10 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get install -y sublime-text google-chrome-stable
+sudo apt-get install -y sublime-text google-chrome-stable node 
 
 wget https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb
 sudo dpkg -i gitter*.deb
+
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-2.8.2-amd64.deb
+sudo dpkg -i slack-desktop*.deb
