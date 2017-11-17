@@ -1,0 +1,3 @@
+sudo: enabled
+install: false
+script: ./install.sh
