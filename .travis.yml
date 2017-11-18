@@ -1,3 +1,5 @@
-sudo: enabled
+sudo: required
+services:
+  - docker
 install: false
 script: docker run $(pwd)/install.sh:/install.sh --rm ubuntu chmod +x /install.sh && /install.sh
