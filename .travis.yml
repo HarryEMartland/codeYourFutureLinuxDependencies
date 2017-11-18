@@ -2,4 +2,4 @@ sudo: required
 services:
   - docker
 install: false
-script: docker run -v $(pwd)/install.sh:/install.sh --rm -it ubuntu chmod +x /install.sh && bash /install.sh
+script: docker run -v $(pwd)/install.sh:/install.sh --rm -it ubuntu /bin/bash -c "chmod +x /install.sh && /install.sh"
