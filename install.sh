@@ -16,6 +16,8 @@ while fuser /var/lib/dpkg/lock >/dev/null 2>&1 ; do
     ((i=i+1))
 done 
 
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
@@ -30,7 +32,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get install -y sublime-text google-chrome-stable node git code
+sudo apt-get install -y sublime-text google-chrome-stable nodejs git code
 
 wget https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb
 sudo apt-get install -y -f ./gitter*.deb
