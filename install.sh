@@ -5,11 +5,14 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
 
 sudo apt-get update
 sudo apt-get -y upgrade
-sudo apt-get install -y sublime-text google-chrome-stable node git
+sudo apt-get install -y sublime-text google-chrome-stable node git code
 
 wget https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb
 sudo dpkg -i gitter*.deb
