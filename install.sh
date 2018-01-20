@@ -34,7 +34,4 @@ sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get install -y sublime-text google-chrome-stable nodejs git code
 
-wget https://update.gitter.im/linux64/gitter_3.1.0_amd64.deb
-sudo apt-get install -y -f ./gitter*.deb
-
 sudo snap install slack --classic
