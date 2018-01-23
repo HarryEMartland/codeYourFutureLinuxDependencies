@@ -35,3 +35,5 @@ sudo apt-get -y upgrade
 sudo apt-get install -y sublime-text google-chrome-stable nodejs git code
 
 sudo snap install slack --classic
+
+sudo snap install intellij-idea-community --classic
