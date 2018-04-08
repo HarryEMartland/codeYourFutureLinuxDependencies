@@ -32,6 +32,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 
 sudo apt-get update
 sudo apt-get -y upgrade
+sudo apt-get -y dist-upgrade
 sudo apt-get install -y sublime-text google-chrome-stable nodejs git code
 
 sudo snap install slack --classic
